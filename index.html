@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xintimani Group of Companies</title>
+    <link rel="manifest" href="manifest.json">
+    <style>
+        /* Global Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        a {
+            text-decoration: none;
+            color: #337ab7;
+        }
+        a:hover {
+            color: #23527c;
+        }
+        button {
+            background-color: #337ab7;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #23527c;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        header nav ul li {
+            margin-right: 20px;
+        }
+        header nav a {
+            color: #fff;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 40px;
+            margin-bottom: 20px;
+        }
+        section h2 {
+            margin-top: 0;
+        }
+
+        /* Home Section Styles */
+        #home {
+            background-image: linear-gradient(to bottom, #337ab7, #23527c);
+            color: #fff;
+            padding: 100px;
+            text-align: center;
+        }
+        #home h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        /* Divisions Section Styles */
+        #divisions ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        #divisions li {
+            margin: 20px;
+            width: calc(25% - 20px);
+        }
+
+        /* Contact Section Styles */
+        #contact form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #contact input, #contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#divisions">Divisions</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#news">News and Events</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Xintimani Group of Companies</h1>
+        <p>Building Knowledge, Building Futures</p>
+        <button>Learn More</button>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Xintimani Group is a South African company with multiple divisions, committed to delivering excellence in construction, education, environmental services, and publishing.</p>
+    </section>
+
+    <!-- Divisions Section -->
+    <section id="divisions">
+        <h2>Our Divisions</h2>
+        <ul>
+            <li>
+                <h3>Xintimani Construction</h3>
+                <p>Building, civil works, renovations</p>
+            </li>
+            <li>
+                <h3>Xintimani Academy</h3>
+                <p>Tutoring, skills training, career guidance</p>
+            </li>
+            <li>
+                <h3>Xintimani Environmental Services</h3>
+                <p>Waste management, recycling, cleaning</p>
+            </li>
+            <li>
+                <h3>Vukona Press</h3>
+                <p>Publishing, book distribution</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Our Projects</h2>
+        <ul>
+            <li>
+                <h3>Project 1</h3>
+                <p>Description of project 1</p>
+            </li>
+            <li>
+                <h3>Project 2</h3>
+                <p>Description of project 2</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- News and Events Section -->
+    <section id="news">
+        <h2>News and Events</h2>
+        <ul>
+            <li>
+                <h3>News Item 1</h3>
+                <p>Description of news item 1</p>
+            </li>
+            <li>
+                <h3>Event 1</h3>
+                <p>Description of event 1</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <p>Phone: 0780 233 263</p>
+        <p>Email: hello@xintimanigroup.co.za</p>
+        <form>
+            <input type="text" name="name" placeholder="Name">
+            <input type="email" name="email" placeholder="Email">
+            <textarea name="message" placeholder="Message"></textarea>
+            <button>Send</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2026 Xintimani Group of Companies</p>
+    </footer>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js')
+                .then(function(registration) {
+                    console.log('Service Worker registered with scope:', registration.scope);
+                })
+                .catch(function(error) {
+                    console.log('Service Worker registration failed:', error);
+                });
+        }
+    </script>
+</body>
+</html>
